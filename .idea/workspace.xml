@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d318691-56bd-44cd-9227-655e2e39ad9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scripts/confetti.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/scripts/confetti.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/base/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/base/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/base/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/base/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/design/_animated-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/design/_animated-header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/design/_details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/design/_details.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/design/_intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/design/_intro.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/design/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/design/_nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/design/_registry.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/design/_registry.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/design/_squad.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/design/_squad.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/design/_venue.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/design/_venue.scss" afterDir="false" />
-    </list>
+    <list default="true" id="6d318691-56bd-44cd-9227-655e2e39ad9d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,20 +17,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/base/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+            <state relative-caret-position="431">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/confetti.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="182">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -200,7 +197,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545676627789" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545678312578" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -228,12 +225,12 @@
       <option name="presentableId" value="Default" />
       <updated>1545672616196</updated>
       <workItem from="1545672617482" duration="86000" />
-      <workItem from="1545672732587" duration="3560000" />
+      <workItem from="1545672732587" duration="3928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3646000" />
+    <option name="totallyTimeSpent" value="4014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="23" width="1624" height="979" extended-state="0" />
@@ -282,13 +279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -331,13 +321,6 @@
     <entry file="file://$PROJECT_DIR$/app/styles/design/_footer.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/base/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/design/_nav.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -347,8 +330,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/confetti.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="182">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/base/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="35" />
         </state>
       </provider>
     </entry>
