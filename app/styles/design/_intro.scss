@@ -1,0 +1,36 @@
+.introRow {
+	display: block;
+	@include media($medium-screen) {
+	  display: flex;
+	}
+}
+
+.introImg,
+.introText {
+	float: left;
+	padding: 0 10px;
+	transition: all 0.2s ease-in-out;
+	width: 100%;
+	@include media($large-screen) {
+	  @include grid-item-columns(6);
+	}
+}
+
+
+.introImg img {
+	display: flex;
+}
+
+.introText p {
+	color: $teal;
+	margin: 20px 0;
+	padding-right: 20px;
+	max-height: 315px;
+	overflow-y: scroll;
+	&::-webkit-scrollbar {width:8px}
+	&::-webkit-scrollbar-track {background:#F1F1F1}
+	&::-webkit-scrollbar-thumb {background:#BCBCBC;border-left:1.5px solid #F1F1F1;border-right:1.5px solid #F1F1F1}
+}
+.introWrapper {
+	@include linear-gradient(#fffffe, #F9F6F2);
+}

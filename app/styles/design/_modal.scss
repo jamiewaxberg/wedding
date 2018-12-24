@@ -1,0 +1,91 @@
+.modal {
+  $medium-screen: 30em !default;
+  $large-screen: 50em !default;
+  @extend %inline-block;
+  label {
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  iframe {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  }
+  .modal-state {
+    display: none;
+  }
+
+  .modal-content {
+  	min-height: 350px;
+  }
+
+  .modal-fade-screen { // overlay
+    @include position(fixed, 0 0 0 0);
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    visibility: hidden;
+    z-index: 99999;
+
+    @include media($large-screen) {
+      padding-top: 10em;
+    }
+  }
+
+  .modal-bg {
+    @include position(absolute, 0 0 0 0);
+    cursor: pointer;
+  }
+
+  .modal-close {
+    cursor: pointer;
+    position: absolute;
+    z-index: 40;
+    right: 20px;
+    top: 10px;
+  }
+  .loading {
+  	position: absolute;
+  	width: 100px;
+  	top: 50%;
+  	left: 50%;
+  	margin-right: -50%;
+  	transform: translate(-50%, -50%);
+  }
+
+  .modal-inner {
+    background-color: #fff;
+    margin: auto;
+    max-height: 95%;
+    overflow: auto;
+    position: relative;
+    top: 0.5em;
+    transition: opacity 0.25s ease;
+    width: 95%;
+
+    @include media($medium-screen) {
+      max-height: 70%;
+      width: 60%;
+    }
+
+    @include media($large-screen) {
+      width: 70%;
+    }
+  }
+
+  .modal-state:checked + .modal-fade-screen {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-closed {
+  overflow: auto;
+}
+
+// Based on code by Kasper Mikiewicz

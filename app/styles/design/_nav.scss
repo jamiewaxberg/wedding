@@ -1,0 +1,73 @@
+nav {
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	z-index: 40;
+	li {
+		@extend %inline-block;
+		background: $pink;
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+		letter-spacing: -1px;
+		padding: 5px 10px;
+		a, a:hover, a:focus {
+			color: $base-bg-color;
+			font-weight: 800;
+		}
+		&:hover,
+		&.current {
+			background: lighten($pink, 2);
+		}
+		&.home { height: 32px; }
+		&.home img {
+			width: 18px;
+		}
+	}
+
+	.nav-modal {
+		background: transparent;
+		padding: 0;
+	}
+}
+.hamburgerMenu {
+	display: none;
+}
+@include media (max-width 769px){
+	.hamburgerMenu {
+		display: block;
+		width: 30px;
+		height: 25px;
+		float: right;
+		margin-bottom: 10px;
+    position:relative;
+    display:inline-block;
+    text-indent:-999px;
+    border-top:5px solid $pink;
+    border-bottom:5px solid $pink;
+		&:before {
+			content:"";
+			position:absolute; 
+			top:5px;
+			left:0;
+			width:100%;
+			border-top:5px solid $pink;
+		}
+	}
+	nav ul {
+		display: none;
+		clear: both;
+		transition: transform 0.3s;
+    transform: translate(0px, -225px);
+	}
+	nav li {
+		display: block;
+	}
+	nav.openmenu ul {
+		display: block;
+    transform: translate(0px, 0);
+	}
+}
