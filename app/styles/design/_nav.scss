@@ -8,21 +8,24 @@ nav {
 	z-index: 40;
 	li {
 		@extend %inline-block;
+		@include transition(ease-in-out 0.2s);
 		background: $medium-green;
 		font-size: 14px;
 		text-transform: uppercase;
 		margin-bottom: 5px;
 		letter-spacing: -1px;
-		padding: 5px 10px;
+		padding: 7px 10px 5px;
 		a, a:hover, a:focus {
 			color: $base-bg-color;
 			font-weight: 800;
 		}
 		&:hover,
 		&.current {
-			background: lighten($medium-green, 2);
+			background: darken($medium-green, 7);
 		}
-		&.home { height: 32px; }
+		&.home {
+			height: 34px;
+		}
 		&.home img {
 			width: 18px;
 		}
