@@ -1,4 +1,4 @@
-$major-btn-color: 				$teal;
+$major-btn-color: 				$base-accent-color;
 $major-btn-color-hover:		$primary-color;
 $major-btn-border-color: 	$major-btn-color;
 
@@ -45,7 +45,7 @@ input[type="submit"] {
 	margin: 0 auto;
 	&:hover {
 		background: $minor-btn-color;
-		color: $rose;
+		color: $light-pink;
 	}
 }
 

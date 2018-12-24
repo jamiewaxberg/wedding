@@ -14,8 +14,8 @@ function atom(x,y,rx,ry){
 		return degree * (Math.PI / 180);
 	}
 	var colors = [
-		'#007f8f', '#84DCC6', '#c1f2e6', '#d7fcec',
-		'#ffebe8', '#ffd8d8', '#ffdde0', '#ffe8e8', '#FFE099'
+		'#CCE0BA', '#D17F6E', '#FFDDDD', '#7099CC',
+		'#A45568', '#85B79D'
 	];
 	this.x = window.innerWidth/2;
 	this.y = window.innerHeight/2.3;
