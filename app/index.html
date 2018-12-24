@@ -13,9 +13,30 @@
 	    <!-- build:js scripts/vendor/modernizr.js -->
 	    <script src="/bower_components/modernizr/modernizr.js"></script>
 	    <!-- endbuild -->
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+					showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+					var i;
+					var x = document.getElementsByClassName("slide");
+					if (n > x.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = x.length} ;
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					x[slideIndex-1].style.display = "block";
+				}
+			</script>
 	</head>
 	<body>
-		<!--[if lt IE 10]>
+	<script src="scripts/base.js"></script>
+
+	<!--[if lt IE 10]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 		<header class="animate" id="home">
@@ -63,16 +84,28 @@
 		</header>
 		<main>
 			<div class="wrapper introWrapper">
+				<h3>Jamie & Benji</h3>
 				<div class="row introRow">
 					<div class="introImg">
-						<!--<img src="images/happy-couple.png" />-->
+						<div class="arrow-button left" onclick="plusDivs(-1)">
+							<svg viewBox="0 0 100 100"><switch><g i:extraneous="self"><path d="M68.7,2.5c2.6,0,5.1,1,7.1,2.9c3.9,3.9,3.9,10.3,0,14.2L45.5,50l30.4,30.4c3.9,3.9,3.9,10.3,0,14.2    c-3.9,3.9-10.3,3.9-14.2,0L24.2,57.1c-1.9-1.9-2.9-4.4-2.9-7.1s1.1-5.2,2.9-7.1L61.6,5.4C63.6,3.5,66.2,2.5,68.7,2.5z"></path></g></switch></svg>
+						</div>
+						<div class="imageWrapper">
+							<img class="slide" src="images/intro-1.JPG" />
+							<img class="slide" src="images/intro-2.JPG" />
+							<img class="slide" src="images/intro-3.JPG" />
+						</div>
+						<div class="arrow-button right" onclick="plusDivs(+1)">
+							<svg viewBox="0 0 100 100" ><switch><g i:extraneous="self"><path d="M31.3,97.5c-2.6,0-5.1-1-7.1-2.9c-3.9-3.9-3.9-10.3,0-14.2L54.5,50L24.2,19.6c-3.9-3.9-3.9-10.3,0-14.2    c3.9-3.9,10.3-3.9,14.2,0l37.5,37.5c1.9,1.9,2.9,4.4,2.9,7.1s-1.1,5.2-2.9,7.1L38.4,94.6C36.4,96.5,33.8,97.5,31.3,97.5z"></path></g></switch></svg>
+						</div>
 					</div>
 					<div class="introText">
-						<!--<p class="intro">Steph and Sarah met the summer of 2012 through mutual friends. Sarah tricked Steph into hanging out by pretending to want to learn to play the bass (she still hasn't learned). We immediately realized how much we had in common, from music taste to creative tech careers to a love of travel. At that time, Steph was on tour as a Production Assistant, so she was traveling all over the US to different cities every week. She'd be in Chicago for a couple days between events and we’d spend every minute possible together. Sarah cooked Steph a lot of homemade meals when she'd come home and likes to think that's what convinced Steph to take a job that would keep her in Chicago more permanently. Since then, we’ve settled into a cute little house in Ukrainian Village, adopted the most perfect and adorable dog in the world, and traveled to 5 different countries together. We've supported each other through career changes and promotions, illnesses and injuries, some very crazy adventures abroad, and all sorts of happy and sad life events that you need your best friend by your side. We've truly built an amazing partnership and life together, and we can't wait to celebrate our love with family and friends at our wedding in August!</p>-->
+						<p class="intro">Jamie and Benji have been together since February 2011. After meeting through mutual friends, they started dating and have been inseparable ever since. After living and working in Chicago, they decided to make a move out west to Denver, and have been there since July 2017. They're glad to call the Rockies home and love their life in the mountains.</p>
 					</div>
 				</div>
 			</div>
 			<div class="wrapper venueWrapper" id="venue">
+				<h3>Accommodations</h3>
 			</div>
 			<div class="wrapper accomodationsWrapper">
 
@@ -80,8 +113,7 @@
 		</main>
 		<footer>
 			<div class="row">
-				<p>Questions? Contact Nancy Milovic at <a href="mailto:namilovic@comcast.net">namilovic@comcast.net</a></p>
-			</div>
+				<p>Website by Jamie Waxberg and Steph Milovic<p>
 		</footer>
 
 		<!-- build:js scripts/vendor.js -->
