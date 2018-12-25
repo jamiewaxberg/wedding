@@ -1,0 +1,25 @@
+.accommodationsWrapper {
+  ul {
+    text-align: center;
+    padding: 2rem 0;
+
+    li {
+      font-size: $h3-font-size;
+      padding: 1.5rem 0 0.75rem;
+
+      &:first-of-type {
+        padding: 1rem 0;
+      }
+    }
+
+    p {
+      font-size: $h5-font-size;
+      margin: 0;
+      color: $gray;
+
+      &:last-of-type {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}

@@ -69,6 +69,7 @@ $base-background-color: $base-bg-color;
 
 // Font Colors
 $base-font-color: $dusty-black;
+$base-accent-dark: lighten($dusty-black, 10);
 $base-accent-color: $dark-teal;
 $light-font-color: 				$white;
 $medium-font-color: 			$light-gray;
@@ -76,8 +77,8 @@ $heading-font-color: 			$dark-gray;
 $footer-font-color: 			$white;
 
 // Link Colors
-$base-link-color: $base-accent-color;
-$hover-link-color: lighten($base-accent-color, 15);
+$base-link-color: $dusty-black;
+$hover-link-color: darken($dusty-black, 10);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 

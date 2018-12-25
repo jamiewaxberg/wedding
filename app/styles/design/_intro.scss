@@ -1,16 +1,18 @@
 .introRow {
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 
-	@include media($medium-screen) {
+	@include media($large-screen) {
 	  display: flex;
+	  flex-direction: row;
 	}
 }
 
 .introImg,
 .introText {
 	float: left;
-	padding: 0 10px;
+	padding: 0 2rem;
 	transition: all 0.2s ease-in-out;
 	width: 100%;
 
@@ -19,6 +21,7 @@
 .introImg {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 
 	@include media($large-screen) {
 		@include grid-item-columns(8);
