@@ -6,11 +6,11 @@
 utilities = {};
 
 //shortcut to check is selector returns results in jQuery
-jQuery.fn.extend({
-  exists: function() {
-    return !!this.length;
-  }
-});
+// jQuery.fn.extend({
+//   exists: function() {
+//     return !!this.length;
+//   }
+// });
 
 //comparen numbers in array and return largest
 utilities.findLargest = function(arr) {
