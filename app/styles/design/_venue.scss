@@ -10,15 +10,22 @@
     padding: 2rem;
     flex-direction: column;
 
-    @include media($large-screen) {
+    @include media($medium-screen) {
       flex-direction: row;
 
     }
 
     .imageWrapper {
-      max-width: 60rem;
-      max-height: 34rem;
-      overflow: hidden;
+      @include media($medium-screen) {
+        max-width: 40rem;
+        max-height: 20.5rem;
+        overflow: hidden;
+      }
+      @include media($large-screen) {
+        max-width: 60rem;
+        max-height: 32rem;
+
+      }
     }
     .slide {
       display: none;
@@ -28,11 +35,25 @@
       }
     }
 
+    .arrowButtonWrapperMobile {
+      display: flex;
+
+      @include media($medium-screen) {
+        display: none;
+      }
+    }
+
     .arrow-button {
-      height: 2rem;
-      width: 2rem;
       cursor: pointer;
       margin: 1rem;
+
+      &.desktop {
+        display: none;
+
+        @include media($medium-screen) {
+          display: block;
+        }
+      }
 
       &:hover svg {
         @include transition(ease-in-out 0.2s);
@@ -41,7 +62,19 @@
 
       svg {
         fill: $dusty-black;
+        height: 2rem;
+        width: 2rem;
       }
+    }
+  }
+
+  .venueText {
+    max-width: 45rem;
+    margin: 1rem auto 0;
+    padding: 0 2rem;
+
+    @include media($large-screen) {
+      max-width: 64rem;
     }
   }
 }

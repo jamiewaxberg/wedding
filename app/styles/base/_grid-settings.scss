@@ -21,7 +21,7 @@ main {
 .row {
 	@include outer-container;
 	@include fill-parent;
-	padding: 3rem 0;
+	padding: 3rem 0 0;
 }
 
 .wrapper {

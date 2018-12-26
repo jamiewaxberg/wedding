@@ -12,31 +12,42 @@
 .introImg,
 .introText {
 	float: left;
-	padding: 0 2rem;
 	transition: all 0.2s ease-in-out;
 	width: 100%;
-
 }
 
 .introImg {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+	padding: 0 2rem;
+
+	@include media($medium-screen) {
+		flex-direction: row;
+		padding: 0;
+	}
 
 	@include media($large-screen) {
 		@include grid-item-columns(8);
+		padding: 0 2rem 0 0;
 	}
 
 	.imageWrapper {
-		max-width: 32rem;
-		max-height: 24rem;
-		overflow: hidden;
+		@include media($medium-screen) {
+			max-width: 32rem;
+			max-height: 22rem;
+			overflow: hidden;
+		}
 	}
 }
 
 .introText {
+	padding: 0 2rem;
+
 	@include media($large-screen) {
 		@include grid-item-columns(4);
+		padding: 0 2rem 0 0;
 	}
 }
 
@@ -54,11 +65,25 @@
 	}
 }
 
+.arrowButtonWrapperMobile {
+	display: flex;
+
+	@include media($medium-screen) {
+		display: none;
+	}
+}
+
 .arrow-button {
-	height: 2rem;
-	width: 2rem;
 	cursor: pointer;
 	margin: 1rem;
+
+	&.desktop {
+		display: none;
+
+		@include media($medium-screen) {
+			display: block;
+		}
+	}
 
 	&:hover svg {
 		@include transition(ease-in-out 0.2s);
@@ -67,5 +92,12 @@
 
 	svg {
 		fill: $dusty-black;
+		height: 1.5rem;
+		width: 1.5rem;
+
+		@include media($medium-screen) {
+			height: 2rem;
+			width: 2rem;
+		}
 	}
 }
