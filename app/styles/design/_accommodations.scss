@@ -12,13 +12,22 @@
       }
     }
 
-    p {
+    p, b {
       font-size: $h5-font-size;
       margin: 0;
       color: $gray;
+    }
 
+    p {
       &:last-of-type {
         margin-bottom: 0.25rem;
+      }
+
+      &.smallText {
+        margin: 0.5rem auto 0;
+        font-size: 1em;
+        max-width: 440px;
+        width: 100%;
       }
     }
   }

@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0;
     flex-direction: column;
 
     @include media($medium-screen) {
@@ -71,7 +71,6 @@
   .venueText {
     max-width: 45rem;
     margin: 1rem auto 0;
-    padding: 0 2rem;
 
     @include media($large-screen) {
       max-width: 64rem;

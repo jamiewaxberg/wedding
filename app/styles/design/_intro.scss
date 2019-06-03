@@ -21,16 +21,18 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 0 2rem;
+
 
 	@include media($medium-screen) {
 		flex-direction: row;
-		padding: 0;
+		padding: 0 2rem;
+
 	}
 
 	@include media($large-screen) {
 		@include grid-item-columns(8);
 		padding: 0 2rem 0 0;
+
 	}
 
 	.imageWrapper {
@@ -43,8 +45,6 @@
 }
 
 .introText {
-	padding: 0 2rem;
-
 	@include media($large-screen) {
 		@include grid-item-columns(4);
 		padding: 0 2rem 0 0;
