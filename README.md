@@ -1,6 +1,4 @@
-# Pliskovic Party Wedding Website
-
-I'm marrying the beatiful [Sarah Pliske](https://github.com/sarahpliske) on August 13th. The Pliskovic Party Wedding Website was created from [Straightup](https://github.com/stephmilovic/straightup), a skeleton I created for quickly starting a new static site. The site is live at [pliskovicparty.com](http://pliskovicparty.com)
+# Golden Hour Wedding Website
 
 ## Installing Project
 
