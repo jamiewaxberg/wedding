@@ -1,0 +1,20 @@
+.wrapper.RSVP {
+  display: flex;
+}
+
+.rsvpButton {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-size: $h4-font-size;
+  background: $accent-color;
+  color: $white;
+  text-decoration: none;
+  margin: 3rem auto 6rem;
+
+  &:hover {
+    text-decoration: underline;
+    background: darken($accent-color, 10);
+    color: $white;
+  }
+}

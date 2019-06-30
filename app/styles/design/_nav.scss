@@ -4,7 +4,7 @@ nav {
 	right: 5px;
 	list-style-type: none;
 	margin: 0px;
-	padding: 0px;
+	padding: 0px 20px;
 	z-index: 40;
 	li {
 		@extend %inline-block;
@@ -28,6 +28,13 @@ nav {
 		}
 		&.home img {
 			width: 18px;
+		}
+
+		&.rsvp {
+			background: $accent-color;
+			&:hover {
+				background: darken($accent-color, 10)
+			}
 		}
 	}
 

@@ -27,8 +27,4 @@ main {
 .wrapper {
 	@extend %clearfix;
 	padding: 3rem 2rem;
-
-	//@include media($small-screen) {
-	//	padding: 3rem 0;
-	//}
 }
