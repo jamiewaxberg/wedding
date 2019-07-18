@@ -42,6 +42,10 @@ nav {
 		background: transparent;
 		padding: 0;
 	}
+
+	@include media (max-width 769px){
+		padding: 20px;
+	}
 }
 .hamburgerMenu {
 	display: none;

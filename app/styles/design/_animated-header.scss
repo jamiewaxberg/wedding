@@ -206,6 +206,13 @@ $animation-color: $light-green;
 	transform-origin: 50% 100%;
 }
 
+.RSVP.top {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -69.5px;
+}
+
 @include media( new-breakpoint(max-width 600px)){
 	.frame {
 	  width: 320px;
